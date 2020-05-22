@@ -57,7 +57,7 @@ ROOT_URLCONF = 'codedaddies_list.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_DIR,],    # add templates directory
+        'DIRS': [TEMPLATE_DIR, ],    # add templates directory
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -12,6 +12,7 @@ URA_MANJI_IMAGE = 'https://usercontent2.hubstatic.com/4523219_f520.jpg'
 CRAIGSLIST_DEFAULT_IMAGE = 'https://craigslist.org/images/peace.jpg'
 FREEDOM_EAGLE_IMAGE = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2Fa-%2FAAuE7mDVwDwSfr2niqzJ-misHtqq6tmPXClXMrT_8A%3Ds900-mo-c-c0xffffffff-rj-k-no&f=1&nofb=1"
 
+
 def home(request):
     return render(request, 'base.html')
 

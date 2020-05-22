@@ -7,7 +7,7 @@ class Search(models.Model):
 
 
     def __str__(self):
-        return f'{self.search}'
+        return '{}'.format(self.search)
 
 
     class Meta:
