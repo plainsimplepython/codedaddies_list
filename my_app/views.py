@@ -35,6 +35,7 @@ def new_search(request):
     for post in post_listings:
         post_title = post.find(class_= 'result-title').text
         post_url = post.find('a').get('href')
+        post_image_url = CRAIGSLIST_DEFAULT_IMAGE
 
         # get item price if it exists
         if post.find(class_= 'result-price'):
@@ -54,9 +55,6 @@ def new_search(request):
             if post_image:
                 post_image_url = BASE_IMAGE_URL.format(post_image[0])
                 print(post_image_url)
-            else:
-                # default image
-                post_image_url = CRAIGSLIST_DEFAULT_IMAGE
 
         final_postings.append((post_title, post_url, post_price, post_image_url))
 
